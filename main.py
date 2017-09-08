@@ -17,6 +17,8 @@ def main():
 
 	COMBOhash = []
 
+	voterFINGERPRINT = []
+
 	print "VoteBox Info 1:"
 	print VBidS
 
@@ -29,8 +31,10 @@ def main():
 	for each in GOVsN:
 		GOVsNhash.append(hashme(each))
 
+
+
 	for x in range(len(VBidS)):
-		COMBOhash = hashme(VBidShash[x]+GOVsNhash[x])
+		COMBOhash.append(hashme(VBidShash[x]+GOVsNhash[x]))
 
 	print "VoteBox Info 1 #:"
 	print VBidShash
@@ -41,9 +45,15 @@ def main():
 	print "Combo Info 1 #:"
 	print COMBOhash
 
+	for x in range(len(VBidS)):
+		voterFINGERPRINT.append(hashme(COMBOhash[x]))
+
+	print "fingerprints Info 1 #:"
+	print voterFINGERPRINT
+
 	# def asymmetricEncrypt():
 	# 	something
-	# 
+	#
 	# def vote():
 	# 	newlist = []
 	# 	for each in VBide
