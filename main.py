@@ -27,5 +27,13 @@ def main():
 	for each in GOVsN:
 		GOVsNhash.append(hashme(each))
 
+	print "VoteBox Info 1 #:"
+	print VBidShash
+
+	print "Gov Info 1 #:"
+	print GOVsNhash
+
+
+
 
 main()
