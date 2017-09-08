@@ -15,6 +15,8 @@ def main():
 	GOVsN = ['a83', 'a93j', 'a983', 'a93', 'a9d8', 'f83', 'f7r', 'ghw', '28dj', 'fi4']
 	GOVsNhash = []
 
+	COMBOhash = []
+
 	print "VoteBox Info 1:"
 	print VBidS
 
@@ -27,11 +29,24 @@ def main():
 	for each in GOVsN:
 		GOVsNhash.append(hashme(each))
 
+	for x in range(len(VBidS)):
+		COMBOhash = hashme(VBidShash[x]+GOVsNhash[x])
+
 	print "VoteBox Info 1 #:"
 	print VBidShash
 
 	print "Gov Info 1 #:"
 	print GOVsNhash
+
+	print "Combo Info 1 #:"
+	print COMBOhash
+
+	# def asymmetricEncrypt():
+	# 	something
+	# 
+	# def vote():
+	# 	newlist = []
+	# 	for each in VBide
 
 
 
